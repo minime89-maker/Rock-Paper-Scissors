@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 100%;
+    background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Buttons */
+.game-button{
+    background-image: url('/images/bg-triangle.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin: 40px auto;
+}
+.game-button button{
+    margin: 10px;
+}
+button:active{
+    transform: translateY(5px);
+}
+#paper{
+    background-image: url('/images/icon-paper.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    outline: none;
+    border: 12px solid #2a46c0;
+    box-shadow: inset 2px 5px 10px gray;
+    padding: 45px;
+    border-radius: 50%;
+}
+#scissors{
+    background-image: url('/images/icon-scissors.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    outline: none;
+    border: 12px solid #F0A61B;
+    box-shadow: inset 2px 5px 10px gray;
+    padding: 45px;
+    border-radius: 50%;
+}
+#rock{
+    background-image: url('/images/icon-rock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    outline: none;
+    border: 12px solid #de3f5c;
+    box-shadow: inset 2px 5px 10px gray;
+    padding: 45px;
+    border-radius: 50%;
+}
+/* Scoreboard */
+.logo{
+    margin: 0 auto;
+    width: 90vw;
+    height: 90px;
+    background: transparent;
+    background-image: url('/images/logo.svg');
+    background-position: left;
+    background-size: 80px;
+    background-position-x: 20px;
+    background-repeat: no-repeat;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 8px;
+}
+.score-number{
+    font-size: 50px;
+    font-weight: 800;
+    color: hsl(229, 25%, 31%);
+    text-align:center;
+    float: right;
+    background-color: #fff;
+    width: 75px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.scoreboard{
+    margin: 30px auto;
+    font-size: 34px;
+    color: #fff;
+    text-align: center;
+}
+/* Rules Card */
+.rules-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rules{
+    margin: 20px auto;
+    width: 100px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    padding: 14px;
+    letter-spacing: 2px;
+    border-radius: 12px;
+}
+.rules-container{
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 20px;
+    display: none;
+}
+.rules-img{
+    margin-bottom: 20%;  
+}
+.close{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 30px 0;
+}
+h2{
+    font-size: 26px;
+    font-weight: 700;
+    color: hsl(229, 25%, 31%);
+    padding: 60px 0;
+}
+
+/* New Game */
+h1{
+    color: #fff;
+    font-size: 90px;
+    padding: 100px 0;
+}
+.reset{
+    background-color: #fff;
+    color: hsl(229, 25%, 31%);
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Media Queries */
+@media (min-width: 426px){
+    .game-button{
+        width: 400px;
+    }
+    .logo{
+        width: 70vw;
+    }
+}
+
+@media (min-width: 725px){
+    .logo{
+        width: 60vw;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Rock Paper Scissors">
+    <meta name="description" content="Rock paper scissors game primarily for mobile devices, but you can also play on desktop.">
+    <meta name="keywords" content="rock, paper, scissors">
+    <link rel="stylesheet" href="rps.css">
+    <link rel="manifest" href="./manifest.json">
+    <!-- ios support -->
+<link rel="apple-touch-icon" href="/images/AppImages/android/android-launchericon-512-512.png" />
+<link rel="apple-touch-icon" href="/images/AppImages/android/android-launchericon-192-192.png" />
+<link rel="apple-touch-icon" href="/images/AppImages/android/android-launchericon-144-144.png" />
+<link rel="apple-touch-icon" href="/images/AppImages/android/android-launchericon-96-96.png" />
+<link rel="apple-touch-icon" href="/images/AppImages/android/android-launchericon-72-72.png" />
+<link rel="apple-touch-icon" href="/images/AppImages/android/android-launchericon-48-48.png" />
+
+<meta name="apple-mobile-web-app-status-bar" content="#fdfdfd" />
+<meta name="theme-color" content="#fdfdfd" />
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+
+<!-- Main -->
+<div class="wrapper">
+    <div class="container">
+        <div class="logo"></div>
+        <div class="game-button">
+            <button id="paper" aria-label="Paper"></button>
+            <button id="scissors" aria-label="Scissors"></button>
+            <button id="rock" aria-label="Rock"></button>
+        </div>
+        <div class="game-result">
+            <div id="text-result"></div>
+        </div>
+    </div>
+    <!-- Rules -->
+    <button class="rules active">RULES</button>
+    <div class="rules-wrapper">
+        <div class="rules-container">
+            <h2>RULES</h2>
+            <div class="rules-img">
+                <img src="/images/image-rules.svg" alt="rules">
+            </div>
+            <button class="close">
+                <img src="/images/icon-close.svg" alt="close">
+            </buttton>
+        </div>
+    </div>
+</div>
+
+   
+<script src="rps.js"></script>
+</body>
+</html>
